@@ -1,0 +1,16 @@
+__pycache__
+.ruff_cache
+datasets
+ablation_results
+raw_videos
+dataset*.db
+processed_videos
+trained/
+notebook.ipynb
+.ipynb_checkpoints
+pretrained_models
+.claude
+.tmp
+data
+_archive
+*.db

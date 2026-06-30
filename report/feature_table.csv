@@ -1,0 +1,106 @@
+Feature,Type,Description
+filename,Categorical,Video file identifier
+video_type,Categorical,Ground truth label (Fake or Real)
+dataset,Categorical,Source dataset (deepspeakv2 / FakeAVCeleb_v1.2 / TalkVid / augmented)
+phoneme,Categorical,IPA phoneme symbol at this onset frame
+frame_position,Categorical,Position tag within phoneme (onset only in this dataset)
+timestamp,Continuous,Time of the phoneme onset in seconds
+lip_distance,Continuous,Euclidean distance between upper and lower lip centre landmarks (pixels)
+mar,Ratio [0-1],Mouth Aspect Ratio — vertical lip opening divided by horizontal mouth width
+mouth_area,Continuous,Pixel area enclosed by the lip contour (pixels²)
+mouth_width,Continuous,Horizontal distance between left and right mouth corners (pixels)
+lip_curvature,Signed continuous,Vertical displacement of the mid-lip point relative to the corners; positive = smile-like upward curve
+mouth_circularity,Ratio [0-1],4π·area / perimeter² — how close the mouth shape is to a perfect circle
+audio_magnitude,Continuous,RMS amplitude of the audio signal at the phoneme onset frame
+_neutral,Blendshape [0-1],Neutral face expression score
+brow_down_left,Blendshape [0-1],Brow depression (frowning) — left side
+brow_down_right,Blendshape [0-1],Brow depression (frowning) — right side
+brow_inner_up,Blendshape [0-1],Inner brow raise (concern / surprise)
+brow_outer_up_left,Blendshape [0-1],Outer brow raise — left side
+brow_outer_up_right,Blendshape [0-1],Outer brow raise — right side
+cheek_puff,Blendshape [0-1],Cheek inflation
+cheek_squint_left,Blendshape [0-1],Cheek squint (lower eyelid raise) — left side
+cheek_squint_right,Blendshape [0-1],Cheek squint (lower eyelid raise) — right side
+eye_blink_left,Blendshape [0-1],Eyelid closure — left eye
+eye_blink_right,Blendshape [0-1],Eyelid closure — right eye
+eye_look_down_left,Blendshape [0-1],Downward gaze — left eye
+eye_look_down_right,Blendshape [0-1],Downward gaze — right eye
+eye_look_in_left,Blendshape [0-1],Inward (nasal) gaze — left eye
+eye_look_in_right,Blendshape [0-1],Inward (nasal) gaze — right eye
+eye_look_out_left,Blendshape [0-1],Outward (temporal) gaze — left eye
+eye_look_out_right,Blendshape [0-1],Outward (temporal) gaze — right eye
+eye_look_up_left,Blendshape [0-1],Upward gaze — left eye
+eye_look_up_right,Blendshape [0-1],Upward gaze — right eye
+eye_squint_left,Blendshape [0-1],Eye squint — left side
+eye_squint_right,Blendshape [0-1],Eye squint — right side
+eye_wide_left,Blendshape [0-1],Eye widening — left eye
+eye_wide_right,Blendshape [0-1],Eye widening — right eye
+jaw_forward,Blendshape [0-1],Jaw protrusion (forward thrust)
+jaw_left,Blendshape [0-1],Lateral jaw displacement to the left
+jaw_open,Blendshape [0-1],Jaw drop (mouth opening driven by jaw)
+jaw_right,Blendshape [0-1],Lateral jaw displacement to the right
+mouth_close,Blendshape [0-1],Lip pressing together
+mouth_dimple_left,Blendshape [0-1],Dimple formation at left mouth corner
+mouth_dimple_right,Blendshape [0-1],Dimple formation at right mouth corner
+mouth_frown_left,Blendshape [0-1],Corner lip depression — left side
+mouth_frown_right,Blendshape [0-1],Corner lip depression — right side
+mouth_funnel,Blendshape [0-1],Lip rounding into a funnel shape
+mouth_left,Blendshape [0-1],Lateral mouth corner displacement to the left
+mouth_lower_down_left,Blendshape [0-1],Lower lip depression — left side
+mouth_lower_down_right,Blendshape [0-1],Lower lip depression — right side
+mouth_press_left,Blendshape [0-1],Lip press at left corner
+mouth_press_right,Blendshape [0-1],Lip press at right corner
+mouth_pucker,Blendshape [0-1],Lip puckering (kiss shape)
+mouth_right,Blendshape [0-1],Lateral mouth corner displacement to the right
+mouth_roll_lower,Blendshape [0-1],Lower lip roll inward
+mouth_roll_upper,Blendshape [0-1],Upper lip roll inward
+mouth_shrug_lower,Blendshape [0-1],Vertical shrug of lower lip
+mouth_shrug_upper,Blendshape [0-1],Vertical shrug of upper lip
+mouth_smile_left,Blendshape [0-1],Smile / lip corner raise — left side
+mouth_smile_right,Blendshape [0-1],Smile / lip corner raise — right side
+mouth_stretch_left,Blendshape [0-1],Horizontal mouth stretch — left side
+mouth_stretch_right,Blendshape [0-1],Horizontal mouth stretch — right side
+mouth_upper_up_left,Blendshape [0-1],Upper lip raise — left side
+mouth_upper_up_right,Blendshape [0-1],Upper lip raise — right side
+nose_sneer_left,Blendshape [0-1],Nose wrinkle / sneer — left side
+nose_sneer_right,Blendshape [0-1],Nose wrinkle / sneer — right side
+mfcc_0,Signed continuous,MFCC coefficient 0 — related to log energy / overall spectral level
+mfcc_1,Signed continuous,MFCC coefficient 1 — captures broad spectral tilt
+mfcc_2,Signed continuous,MFCC coefficient 2 — second spectral shape component
+mfcc_3,Signed continuous,MFCC coefficient 3 — third spectral shape component
+mfcc_4,Signed continuous,MFCC coefficient 4 — fourth spectral shape component
+mfcc_5,Signed continuous,MFCC coefficient 5 — fifth spectral shape component
+mfcc_6,Signed continuous,MFCC coefficient 6 — sixth spectral shape component
+mfcc_7,Signed continuous,MFCC coefficient 7 — seventh spectral shape component
+mfcc_8,Signed continuous,MFCC coefficient 8 — eighth spectral shape component
+mfcc_9,Signed continuous,MFCC coefficient 9 — ninth spectral shape component
+mfcc_10,Signed continuous,MFCC coefficient 10 — tenth spectral shape component
+mfcc_11,Signed continuous,MFCC coefficient 11 — eleventh spectral shape component
+mfcc_12,Signed continuous,MFCC coefficient 12 — twelfth spectral shape component
+mfcc_delta_0,Signed continuous,First-order temporal derivative of MFCC 0 — rate of change of spectral level
+mfcc_delta_1,Signed continuous,First-order temporal derivative of MFCC 1
+mfcc_delta_2,Signed continuous,First-order temporal derivative of MFCC 2
+mfcc_delta_3,Signed continuous,First-order temporal derivative of MFCC 3
+mfcc_delta_4,Signed continuous,First-order temporal derivative of MFCC 4
+mfcc_delta_5,Signed continuous,First-order temporal derivative of MFCC 5
+mfcc_delta_6,Signed continuous,First-order temporal derivative of MFCC 6
+mfcc_delta_7,Signed continuous,First-order temporal derivative of MFCC 7
+mfcc_delta_8,Signed continuous,First-order temporal derivative of MFCC 8
+mfcc_delta_9,Signed continuous,First-order temporal derivative of MFCC 9
+mfcc_delta_10,Signed continuous,First-order temporal derivative of MFCC 10
+mfcc_delta_11,Signed continuous,First-order temporal derivative of MFCC 11
+mfcc_delta_12,Signed continuous,First-order temporal derivative of MFCC 12
+mfcc_delta2_0,Signed continuous,Second-order temporal derivative of MFCC 0 — acceleration of spectral change
+mfcc_delta2_1,Signed continuous,Second-order temporal derivative of MFCC 1
+mfcc_delta2_2,Signed continuous,Second-order temporal derivative of MFCC 2
+mfcc_delta2_3,Signed continuous,Second-order temporal derivative of MFCC 3
+mfcc_delta2_4,Signed continuous,Second-order temporal derivative of MFCC 4
+mfcc_delta2_5,Signed continuous,Second-order temporal derivative of MFCC 5
+mfcc_delta2_6,Signed continuous,Second-order temporal derivative of MFCC 6
+mfcc_delta2_7,Signed continuous,Second-order temporal derivative of MFCC 7
+mfcc_delta2_8,Signed continuous,Second-order temporal derivative of MFCC 8
+mfcc_delta2_9,Signed continuous,Second-order temporal derivative of MFCC 9
+mfcc_delta2_10,Signed continuous,Second-order temporal derivative of MFCC 10
+mfcc_delta2_11,Signed continuous,Second-order temporal derivative of MFCC 11
+mfcc_delta2_12,Signed continuous,Second-order temporal derivative of MFCC 12
+mfcc_energy,Continuous,Log frame energy derived from the MFCC computation

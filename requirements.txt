@@ -1,0 +1,16 @@
+# Lightweight CPU-only dependencies for running the pretrained detector (README section A).
+# Installs the CPU build of PyTorch (no ~2.8 GB CUDA download). For training /
+# reproduction with the exact GPU versions, use requirements-full.txt instead.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.10.0+cpu
+librosa==0.11.0
+opencv-python==4.13.0.92
+pandas==2.3.3
+mediapipe==0.10.32
+transformers==5.1.0
+protobuf==6.33.5
+phonemizer==3.3.0
+sentencepiece==0.2.1
+tokenizers==0.22.2
+scikit-learn==1.8.0
+joblib==1.5.3
